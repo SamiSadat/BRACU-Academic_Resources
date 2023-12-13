@@ -10,6 +10,7 @@ import { Forum } from './Pages/Forum';
 import { Home } from './Pages/Home';
 import { SignIn } from './Pages/SignIn';
 import People from './Pages/people';
+import CourseReview from './Pages/CourseReview';
 
 import DateFnsUtils from '@date-io/date-fns';
 import { blue } from '@material-ui/core/colors';
@@ -109,8 +110,8 @@ export default function App() {
                   <Route path='/feedbacks'>
                     {!user && admin ? <Redirect to='/login' /> : <Feedback />}
                   </Route>
-                  <Route path='/settings'>
-                    <Settings
+                  <Route path='/Course Review'>
+                    <CourseReview
                     // currentTheme={currentTheme}
                     // setCurrentTheme={setCurrentTheme}
                     />

@@ -28,6 +28,7 @@ router.get('/', async (req, res) => {
     const forumPosts = await Forum.find()
       .populate({
         path: 'replies',
+        // is reviewd then show
         populate: {
           path: 'creator',
           select: '-password' // Exclude password field

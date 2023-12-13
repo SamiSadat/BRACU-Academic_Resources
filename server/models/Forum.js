@@ -56,6 +56,6 @@ const forumSchema = new mongoose.Schema({
     default: []
   }
 });
-//is reviewed
+// is_reviewed: default false
 const Forum = mongoose.model('Forum', forumSchema);
 module.exports = Forum;

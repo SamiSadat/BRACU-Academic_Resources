@@ -123,7 +123,7 @@ function ResponsiveDrawer(props) {
                 // { text: 'components', icon: 'apps' }
               ]
             : []),
-          { text: 'settings', icon: 'settings' },
+          { text: 'Course Review', icon: 'settings' },
           ...(user ? [] : [{ text: 'login', icon: 'lock' }])
         ].map(({ text, icon }, index) => (
           <ListItem

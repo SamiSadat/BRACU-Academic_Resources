@@ -241,3 +241,4 @@ export const deleteFeedback = async (id) => {
     throw err;
   }
 };
+// *Course Review API Calls*
