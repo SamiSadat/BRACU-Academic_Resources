@@ -23,19 +23,39 @@ router.post('/', verifyTokenAuth, async (req, res) => {
 });
 
 // Get all forum posts with populated replies
+// router.get('/', async (req, res) => {
+//   try {
+//     const forumPosts = await Forum.find()
+//       .populate({
+//         path: 'replies',
+//         // is reviewd then show
+//         populate: {
+//           path: 'creator',
+//           select: '-password' // Exclude password field
+//         }
+//       })
+//       .populate('creator', '-password')
+//       .sort({ createdAt: -1 });
+
+//     res.status(200).json(forumPosts);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+
+// Get all forum posts with populated replies, sorted by createdAt
 router.get('/', async (req, res) => {
   try {
     const forumPosts = await Forum.find()
       .populate({
         path: 'replies',
-        // is reviewd then show
         populate: {
           path: 'creator',
           select: '-password' // Exclude password field
         }
       })
       .populate('creator', '-password')
-      .sort({ createdAt: -1 });
+      .sort({ createdAt: -1 }); // Sort by createdAt in descending order
 
     res.status(200).json(forumPosts);
   } catch (err) {
@@ -54,7 +74,8 @@ router.get('/find/:id', async (req, res) => {
           select: '-password' // Exclude password field
         }
       })
-      .populate('creator', '-password');
+      .populate('creator', '-password')
+      .sort({ createdAt: -1 }); // Sort by createdAt in descending order
     if (!forumPost) {
       return res.status(404).json({ message: 'Forum post not found' });
     }

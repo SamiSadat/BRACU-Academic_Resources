@@ -64,7 +64,7 @@ function Copyright() {
         href='http://localhost:5000/'
         style={{ textDecoration: 'none', color: 'inherit' }}
       >
-        Knowledge Nexus.
+        Academic Resources.
       </Link>{' '}
       All Rights Reserved. {new Date().getFullYear()}
       {'.'}
@@ -79,7 +79,7 @@ export default function Footer() {
     <footer className={classes.footer}>
       <Content>
         <Typography variant='h6' align='center' gutterBottom>
-          BRACU Knowledge Nexus
+          BRACU Academic Resources
         </Typography>
         <Copyright />
         <div className={classes.bottom}>

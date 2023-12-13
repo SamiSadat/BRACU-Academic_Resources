@@ -121,7 +121,7 @@ export function Home() {
         <Content>
           <Container maxWidth='sm'>
             <footer className={classes.imgWrapper}>
-              <img src='img/default.png' alt='Logo' className={classes.logo} />
+              <img src='img/last.png' alt='Logo' className={classes.logo} />
             </footer>
           </Container>
         </Content>
@@ -135,7 +135,7 @@ export function Home() {
                 color='textPrimary'
                 gutterBottom
               >
-                BRACU Knowledge Nexus
+                BRACU Academic Resources
               </Typography>
             </Container>
             <Container maxWidth='lg'>
@@ -148,7 +148,7 @@ export function Home() {
                 <Typewriter
                   options={{
                     strings: [
-                      'Welcome to BRACU Knowledge Nexus!',
+                      'Welcome to BRACU Academic Resources!',
                       'A place for sharing thoughts and meaningful discussions.',
                       'Explore and expand your knowledge.'
                     ],
@@ -191,10 +191,10 @@ export function Home() {
               </div>
               <div className={classes.textContainer}>
                 <Typography variant='h4'>
-                  What is BRACU Knowledge Nexus?
+                  What is BRACU Academic Resources?
                 </Typography>
                 <Typography variant='body1' className={classes.font}>
-                  BRACU Knowledge Nexus is a platform for sharing knowledge and
+                  BRACU Academic Resources is a platform for sharing knowledge and
                   meaningful discussions. It is a place where you can share your
                   thoughts and ideas with others. Ask questions and get answers
                   from others. Find people with similar interests. Connect with

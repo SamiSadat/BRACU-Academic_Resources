@@ -210,7 +210,7 @@ function ResponsiveDrawer(props) {
               component={RouterLink}
               className={classes.logo}
             >
-              BRACU Knowledge Nexus
+              BRACU Academic Resources
             </Typography>
             <div style={{ flexGrow: 1 }}></div>
             <DarkModeToggle onChange={change} checked={check} size={60} />

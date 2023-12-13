@@ -6,9 +6,9 @@
     </a>
 </div>
 
-# BRACU Knowledge Nexus
+# BRACU Academic Resources
 
-Welcome to the BRACU Knowledge Nexus project! This is a web-based platform that provides users with the ability to share resources, as well as engage in conversations with fellow users. It also includes user account management functionalities, such as user registration, login, profile update, along with features like post creation, upvoting and downvoting mechanisms, discussion threads, and search functionality.
+Welcome to the BRACU Academic Resources project! This is a web-based platform that provides users with the ability to share resources, as well as engage in conversations with fellow users. It also includes user account management functionalities, such as user registration, login, profile update, along with features like post creation, upvoting and downvoting mechanisms, discussion threads, and search functionality.
 
 The project is developed using MERN Stack and is designed to be user-friendly, intuitive, and efficient. This project is aimed at improving user experience and making it easy for users to share and discuss topics in a secure and reliable manner. A [MaterialUI](https://react.school/material-ui/templates "https://react.school/material-ui/templates") template is used for the frontend design of this project.
 

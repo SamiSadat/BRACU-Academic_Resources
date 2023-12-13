@@ -41,7 +41,9 @@ const feedbackRoute = require('./routes/feedback');
 dotenv.config();
 
 mongoose
-  .connect("mongodb+srv://test1:test1@mernproject1.oqegid4.mongodb.net/?retryWrites=true&w=majority")
+  .connect("mongodb+srv://samisadat:1234@cluster0.ofnomiz.mongodb.net/Cluster0?retryWrites=true&w=majority")
+  // mongodb+srv://samisadat:1234@cluster0.ofnomiz.mongodb.net/Cluster0?retryWrites=true&w=majority
+  // mongodb+srv://test1:test1@mernproject1.oqegid4.mongodb.net/?retryWrites=true&w=majority
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.log(err));
 
